@@ -136,7 +136,7 @@ let playMusic = (track, pause = false) => {
 // Function to display albums and handle card click events
 async function displayAlbums() {
   try {
-    let response = await fetch("https://api.github.com/repositories/909009938/contents/songs");
+    let response = await fetch("https://api.github.com/repos/shubhampatel1573/Spotify/contents/songs");
     if (!response.ok) throw new Error(`Error fetching albums: ${response.status}`);
 
     let data = await response.json();
