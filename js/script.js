@@ -1,4 +1,5 @@
 // Select play button
+//
 let play = document.querySelector(".songbutton").getElementsByClassName("play")[0];
 let currentSong = new Audio();
 let songs = [];
